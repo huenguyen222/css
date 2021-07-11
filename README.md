@@ -1,2 +1,336 @@
 # css
-.header{     height: 120px;     background-image: linear-gradient(0 ,#ff6433, #f53e2d); } .header__navbar{     display: flex;     justify-content: space-between; } .header__navbar-list{     list-style: none;     padding-left: 0; } .header__navbar-item{     display: inline-block;     margin: 0 8px ;     position: relative;     min-height: 20px; } .header__navbar-item, .header__navbar-link{     font-size: 1.4rem;     color: #fff;     text-decoration: none;     font-weight: 300; } .header__navbar-item:hover, .header_navbar-icon-link:hover, .header__navbar-link:hover{     color: rgba(255, 255, 255, 0.7);     cursor: pointer; }  .header__navbar-item--bold{     font-weight: 500; } .header__navbar-item--separate::after{     content: "";     display: block;     position: absolute;      height: 14px;     border: 1px solid pink;     right: -9px;     top: 1%;  } .header_navbar-icon-link{     color: #fff;     text-decoration: none; } /* .header__navbar-item, .header__navbar-link, .header_navbar-icon-link{     display: inline-flex;     align-items: center; } */  .icon_edit{     font-size: 1.8rem;     margin: 0 4px ; } .connect_edit{     cursor: default;     color: #fff; }  /* Header QR Code */  .item__QR{     background-color: #fff;     width: 186px;     position: absolute;     left: 0;     top: 100%;     padding: 8px;     display: none;     animation: fadeIn ease-in 0.3s; } .qr__img{     width: 100%; } .qr__apps{     display: flex;     justify-content: space-between;         } .appStore, .googlePlay{          height: 18px; } .header__navbar-item--QR:hover .item__QR{     display: block; } /* Header Notification */  .header__noti{     position: absolute;     margin-top: 10px;     top: 100%;     right: 0;     width: 404px;     background-color: #fff;     border: 1px solid rgb(172, 171, 171);     display: none;     animation: fadeIn ease-in 0.5s;  } .header__noti-header--tb:hover .header__noti{     display: block; } .header__noti-header{     height: 36px;     background-color: #fff; } .header__noti-header p{     color: gray;     margin: 23px ;     font-size: 16px;       } .header__noti-list{     list-style: none;     background-color: rgb(228, 213, 216);     padding-left: 0;      }  .header__noti-item a{     display: flex; }  .header__noti-link{     padding: 12px;     justify-content: space-between;    text-decoration: none;    background-color: rgb(250, 244, 244); }  .header__noti-img{          width: 20%;     height: 55px;     }  .header__noti-info{      text-align: none;   margin-left: 13px; }  .header__noti-title{     display: block;     margin-bottom: 5px;     color: black;     font-size: 13px; }  .header__noti-description{     display: block;     color: gray;     font-size: 10px;     line-height: 10px;  } .header__noti-footer{     color: gray;     margin: 18px  ;     font-size: 16px;     display: flex;      }  .header__noti-footer-btn{     text-decoration: none;     color: gray;     margin: auto;  } /* header buttom */ .header_list_buttom{         margin: 10px;     top: 100%; } .header_list_buttom--ls{     display: flex; } .header_item-list{     justify-content: space-around; } .header_logo{          } .header_logo-img{          width: 15%; } .header_search{  } .header_search-input{     } .header_cart{  }  /* Authen model */ .auth-form{     width: 500px;              /* border: 1px solid rgb(172, 171, 171) ;     border-radius: 5px;     box-shadow: rgb(172, 171, 171);          margin-left: 28%; */ } .auth-form_container{     padding: 0 32px;         } .auth-form_header{     display: flex;     justify-content: space-between;     align-items: center;     cursor: pointer;     padding: 0 12px;     margin-top: 12px;     } .auth-form_heading{     font-size: 2.2rem;     font-weight: 300px;     color: rgb(82 82 82); } .auth-form_login{     font-size: 1.4rem;     color: rgb(238 77 45); } .auth-form__group{     margin-top: 16px; } .auth-form__input{     height: 40px;     width: 100%;     padding: 0 12px;     border: 1px solid rgb(219 219 219) ;     border-radius: 2px;     font-size: 1.4rem;     outline-color: #888;     } .auth-form__aside{     font-size: 1.2rem;     margin-top: 24px; } .auth-form__chinhsach-text{     font-size: 1.3rem;     line-height: 1.8rem;     text-align: center;     color: rgba(0,0,0,.87); } .auth-form__link{     color: #ee4d2d;     text-decoration: none; } .auth-form__control{     display: flex;     justify-content: flex-end; } .auth-form__control-back{          margin-right: 8px; } .auth-form__socials{     margin-top: 20px;     background-color:#f5f5f5;     padding:12px 36px ;     display: flex;     justify-content: space-between;     align-items: center;      } .btn.btn--with_icon-fb{     background-color: #1877f2;     color: #fff;      } .btn.btn--with_icon-gg{     background-color: #fff;     color: #666;     text-align: center; } .btn.btn_size--s{     height: 32px;     font-size: 12px;     } .auth-form__socials--icon{     font-size: 1.8rem;     padding-left: 10px; } .auth-form__socials--icon .btn.btn--with_icon-fb{     color: white; } .label{     margin: 0 36px; } .auth-form__group.invalid{     border-color: #f33a58; }  .auth-form__group.invalid .form_message {     color: #f33a58; }  .form_message {     font-size: 1.2rem;     line-height: 1.6rem;     padding: 4px 0 0; }
+.header{
+    height: 120px;
+    background-image: linear-gradient(0 ,#ff6433, #f53e2d);
+}
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar-list{
+    list-style: none;
+    padding-left: 0;
+}
+.header__navbar-item{
+    display: inline-block;
+    margin: 0 8px ;
+    position: relative;
+    min-height: 20px;
+}
+.header__navbar-item,
+.header__navbar-link{
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+.header__navbar-item:hover,
+.header_navbar-icon-link:hover,
+.header__navbar-link:hover{
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.header__navbar-item--bold{
+    font-weight: 500;
+}
+.header__navbar-item--separate::after{
+    content: "";
+    display: block;
+    position: absolute; 
+    height: 14px;
+    border: 1px solid pink;
+    right: -9px;
+    top: 1%;
+
+}
+.header_navbar-icon-link{
+    color: #fff;
+    text-decoration: none;
+}
+/* .header__navbar-item,
+.header__navbar-link,
+.header_navbar-icon-link{
+    display: inline-flex;
+    align-items: center;
+} */
+
+.icon_edit{
+    font-size: 1.8rem;
+    margin: 0 4px ;
+}
+.connect_edit{
+    cursor: default;
+    color: #fff;
+}
+ /* Header QR Code */
+
+.item__QR{
+    background-color: #fff;
+    width: 186px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 8px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+.qr__img{
+    width: 100%;
+}
+.qr__apps{
+    display: flex;
+    justify-content: space-between;
+  
+    
+}
+.appStore,
+.googlePlay{
+    
+    height: 18px;
+}
+.header__navbar-item--QR:hover .item__QR{
+    display: block;
+}
+/* Header Notification */
+
+.header__noti{
+    position: absolute;
+    margin-top: 10px;
+    top: 100%;
+    right: 0;
+    width: 404px;
+    background-color: #fff;
+    border: 1px solid rgb(172, 171, 171);
+    display: none;
+    animation: fadeIn ease-in 0.5s;
+
+}
+.header__noti-header--tb:hover .header__noti{
+    display: block;
+}
+.header__noti-header{
+    height: 36px;
+    background-color: #fff;
+}
+.header__noti-header p{
+    color: gray;
+    margin: 23px ;
+    font-size: 16px;
+    
+
+}
+.header__noti-list{
+    list-style: none;
+    background-color: rgb(228, 213, 216);
+    padding-left: 0;
+    
+}
+
+.header__noti-item a{
+    display: flex;
+}
+
+.header__noti-link{
+    padding: 12px;
+    justify-content: space-between;
+   text-decoration: none;
+   background-color: rgb(250, 244, 244);
+}
+
+.header__noti-img{
+    
+    width: 20%;
+    height: 55px;
+   
+}
+
+.header__noti-info{
+  
+  text-align: none;
+  margin-left: 13px;
+}
+
+.header__noti-title{
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 13px;
+}
+
+.header__noti-description{
+    display: block;
+    color: gray;
+    font-size: 10px;
+    line-height: 10px;
+
+}
+.header__noti-footer{
+    color: gray;
+    margin: 18px  ;
+    font-size: 16px;
+    display: flex;
+   
+
+}
+
+.header__noti-footer-btn{
+    text-decoration: none;
+    color: gray;
+    margin: auto;
+
+}
+/* header buttom */
+.header_list_buttom{
+   
+    margin: 10px;
+    top: 100%;
+}
+.header_list_buttom--ls{
+    display: flex;
+}
+.header_item-list{
+    justify-content: space-around;
+}
+.header_logo{
+   
+    
+}
+.header_logo-img{
+    
+    width: 15%;
+}
+.header_search{
+
+}
+.header_search-input{
+   
+}
+.header_cart{
+
+}
+
+/* Authen model */
+.auth-form{
+    width: 500px;
+   
+    
+    /* border: 1px solid rgb(172, 171, 171) ;
+    border-radius: 5px;
+    box-shadow: rgb(172, 171, 171);
+    
+    margin-left: 28%; */
+}
+.auth-form_container{
+    padding: 0 32px;
+   
+   
+}
+.auth-form_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 12px;
+    margin-top: 12px;
+   
+}
+.auth-form_heading{
+    font-size: 2.2rem;
+    font-weight: 300px;
+    color: rgb(82 82 82);
+}
+.auth-form_login{
+    font-size: 1.4rem;
+    color: rgb(238 77 45);
+}
+.auth-form__group{
+    margin-top: 16px;
+}
+.auth-form__input{
+    height: 40px;
+    width: 100%;
+    padding: 0 12px;
+    border: 1px solid rgb(219 219 219) ;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    outline-color: #888;
+   
+}
+.auth-form__aside{
+    font-size: 1.2rem;
+    margin-top: 24px;
+}
+.auth-form__chinhsach-text{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: rgba(0,0,0,.87);
+}
+.auth-form__link{
+    color: #ee4d2d;
+    text-decoration: none;
+}
+.auth-form__control{
+    display: flex;
+    justify-content: flex-end;
+}
+.auth-form__control-back{
+    
+    margin-right: 8px;
+}
+.auth-form__socials{
+    margin-top: 20px;
+    background-color:#f5f5f5;
+    padding:12px 36px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.btn.btn--with_icon-fb{
+    background-color: #1877f2;
+    color: #fff;
+    
+}
+.btn.btn--with_icon-gg{
+    background-color: #fff;
+    color: #666;
+    text-align: center;
+}
+.btn.btn_size--s{
+    height: 32px;
+    font-size: 12px;
+   
+}
+.auth-form__socials--icon{
+    font-size: 1.8rem;
+    padding-left: 10px;
+}
+.auth-form__socials--icon
+.btn.btn--with_icon-fb{
+    color: white;
+}
+.label{
+    margin: 0 36px;
+}
+.auth-form__group.invalid{
+    border-color: #f33a58;
+}
+
+.auth-form__group.invalid .form_message {
+    color: #f33a58;
+}
+
+.form_message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+
+
+
+
+
+
